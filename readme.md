@@ -59,3 +59,61 @@ To make PHP development easier, install these extensions in VSCode:
 ---
 
 ✅ Now you are ready to write and run PHP code on your local machine!
+# PHP Variables
+
+Variables are **containers used to store data**.
+
+### Rules for PHP Variables
+- Variables start with `$`
+- PHP variables are **case-sensitive**
+- `$total` and `$Total` are different variables
+
+### Example:
+```php
+$total = 10;
+$Total = 20;
+
+echo $total; // 10
+echo $Total; // 20
+```
+# echo and print in php
+We can print using echo and print.
+In echo we can print value in two different ways
+```php
+echo "hello world";
+```
+or
+```php
+echo("hello world");
+```
+### example of echo
+```php
+<?php
+
+    echo "hello world";
+    echo "<br>";
+    echo "</br>";
+    // single or double quotes.
+    // Double quotes variable can be inserted to the string like above example.
+    // single quotes, variable can be inserted using . operator for example
+    $name="Research";
+    echo 'Hello'.$name.'How are you';
+
+?>
+```
+### example of print
+```php
+<?php
+
+    print "hello world";
+    print "<br>";
+    print "</br>";
+    // single or double quotes.
+    // Double quotes variable can be inserted to the string like above example.
+    // single quotes, variable can be inserted using . operator for example
+    $name="Research";
+    
+    print 'Hello'.$name.'How are you';
+
+?>
+```
