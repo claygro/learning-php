@@ -41,11 +41,11 @@ To make PHP development easier, install these extensions in VSCode:
 ## Step 3: Set Up Live Server for PHP
 
 1. Install **Live Server** in your browser from the [Chrome Web Store](https://chrome.google.com/webstore).  
-<br>
+   <br>
    ![Live Server Logo](assets/liveshare.png)
 
 2. Open Live Server settings in VSCode:  
-<br>
+   <br>
    ![Live Server Setup](assets/livesharesetup.png)
 
 3. Configure the settings:
@@ -59,16 +59,19 @@ To make PHP development easier, install these extensions in VSCode:
 ---
 
 ✅ Now you are ready to write and run PHP code on your local machine!
+
 # PHP Variables
 
 Variables are **containers used to store data**.
 
 ### Rules for PHP Variables
+
 - Variables start with `$`
 - PHP variables are **case-sensitive**
 - `$total` and `$Total` are different variables
 
 ### Example:
+
 ```php
 $total = 10;
 $Total = 20;
@@ -76,17 +79,24 @@ $Total = 20;
 echo $total; // 10
 echo $Total; // 20
 ```
+
 # echo and print in php
+
 We can print using echo and print.
 In echo we can print value in two different ways
+
 ```php
 echo "hello world";
 ```
+
 or
+
 ```php
 echo("hello world");
 ```
+
 ### example of echo
+
 ```php
 <?php
 
@@ -101,7 +111,9 @@ echo("hello world");
 
 ?>
 ```
+
 ### example of print
+
 ```php
 <?php
 
@@ -112,8 +124,41 @@ echo("hello world");
     // Double quotes variable can be inserted to the string like above example.
     // single quotes, variable can be inserted using . operator for example
     $name="Research";
-    
+
     print 'Hello'.$name.'How are you';
 
 ?>
+```
+
+# Datatypes in php
+
+Variables can store data of different types, and different data types can do different things.
+<br/>
+PHP supports the following data types:
+
+1. String
+2. Number
+3. Array
+4. Object
+5. Float
+6. Bool(true of false)
+7. Null
+8. Resource (references external resources)
+
+To find the datatypes of the variable we use `var_dump()` function
+
+For example:
+
+```php
+<?php
+   $x="hello world";
+   echo var_dump($x)
+ ?>
+ <?php
+    $arr=[1,2,3,"hello"];
+    echo "<pre>";// pre is html tag uses mainly for formating.
+    echo var_dump($arr);
+    echo "</pre>";
+
+ ?>
 ```
