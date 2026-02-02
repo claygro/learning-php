@@ -162,3 +162,56 @@ For example:
 
  ?>
 ```
+
+# String function in php
+
+1. `strlen()` function to find the length of the string.
+
+```php
+<?php
+   $x="hello";
+   echo strlen($x);  //to find the length of the string.
+?>
+```
+
+2. `str_word_count()` function. To count the word of the string
+
+```php
+ <?php
+   $x="hello world";
+   echo str_word_count($x);  //to find the count of the word.
+?>
+```
+
+3. `str_contains()` to find the this word or string is contains or not
+
+```php
+<?php
+   $x="hello world world";
+   echo str_contains($x,"hello");  //to find the length of the string.
+   //it gives output 1 if it contains the word, character or substring in the string and nothing if it doesnot contains the word.
+?>
+```
+
+4. Case-Sensitive Search using `str_contains()`
+
+> **Note:**  
+> The `str_contains()` function performs a **case-sensitive** search.
+
+### Example:
+
+```php
+<?php
+$x = "hello world";
+echo var_dump(str_contains($x, "World"));
+?>
+```
+
+5. `str_starts_with()` function, to check either the string is starts with the substring or not.
+
+```php
+<?php
+$x = "hello world";
+echo var_dump(str_contains($x, "World"));
+?>
+```
